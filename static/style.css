@@ -1,0 +1,45 @@
+/* Full Page Background */
+body {
+    background-image: url("background.jpg"); /* Static folder la iruntha auto load aagum */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button, select {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+}
+
+button:hover {
+    background-color: #218838;
+}

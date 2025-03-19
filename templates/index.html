@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <textarea id="textInput" placeholder="Enter text here..."></textarea>
+        
+        <div class="buttons">
+            <select id="voiceSelect">
+              <option value="female">Female</option>
+            </select>
+            <button onclick="speakText()">Play</button>
+            <button onclick="downloadAudio()">Download</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
